@@ -18,6 +18,10 @@ body{
     height: 100vh;
     overflow-x: hidden;
 }
+.swiper {
+  width: 600px;
+  height: 300px;
+}
 .button{
     background-color: transparent;
     border: none;
@@ -515,19 +519,28 @@ header nav.menu-desktop ul a:hover{
 }
 .cards-container{
     display: flex;
-    flex-direction: row;
-    gap: 82px;
     margin-top: 72px;
     justify-content: center;
     align-items: center;
 }
-.cards-feedbacks, .cards-feedbacks2{
+.cards-feedbacks{
     color: rgba(255, 255, 255, 0.688);
     background-color: #242424;
-    min-width: 300px;
     height: auto;
     border-radius: 18px;
     padding: .5rem;
+}
+.cards-feedbacks .div-audio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.meu-player{
+    width: 300px;
+    background: #222;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
 }
 .invisivel{
     display: none;
@@ -535,13 +548,15 @@ header nav.menu-desktop ul a:hover{
 .texto-feedbacks{
     padding: 30px;
     font-family: "Inter", sans-serif;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 500;
+    text-align: justify;
 }
 .name-feedbacks{
     display: flex;
+    justify-content: center;
     align-items: center;
-    padding-left: 30px;
+    padding-right: 20px;
 }
 .name-feedbacks h6{
     font-family: "Montserrat", sans-serif;
@@ -551,15 +566,15 @@ header nav.menu-desktop ul a:hover{
 .name-feedbacks h6 span{
     font-weight: 600;
     padding-bottom: 8px;
-    font-size: 12px;
+    font-size: 14px;
+    color: white;
 }
-.seta-feedbacks{
-    background: none;
-  border: none;
-  padding: 0;
-  margin: 0;
-  cursor: pointer;
+.swiper-button-prev img, .swiper-button-next img{
+    margin-top: 110px;
+    width: 120px;
+    height: auto;
 }
+
 .tituloResultado{
     display: flex;
     justify-content: center;
@@ -870,6 +885,10 @@ ul{
     header img{
         margin-left: 0;
     }
+    .swiper {
+    max-width: 320px;
+    min-height: 370px;
+    }
     .btn-quero-mudar{
         display: none;
     }
@@ -1046,25 +1065,16 @@ ul{
     }
     .cards-container{
         width: 100vw;
-        overflow-x: auto;
-        overflow-y: hidden;
         display: flex;
     }
-    .cards-feedbacks, .cards-feedbacks2{
-        min-width: 18rem;
-        max-height: 50rem;
-    }
-    .invisivel{
-        display: block;
-    }
-    #primeiro_card_feedback{
-        margin-left: 73.5rem;
-    }
-    #ultimo_card_feedback{
-        margin-right: 4rem;
-    }
-    .seta-feedbacks{
+    .swiper-button-prev img, .swiper-button-next img{
         display: none;
+    }
+    .swiper-button-prev, .swiper-button-next{
+        display: none !important;
+    }
+    .texto-feedbacks{
+        font-size: 17px;
     }
     .resultados-titulo{
         margin-left: 25px;

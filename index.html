@@ -9,9 +9,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
     <script src="https://unpkg.com/split-type"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -209,54 +211,43 @@
        
         <section id="depoimentos" class="feedbacks">
             <h2 class="alunosAcham">O que os Alunos acham!</h2>
-            <div class="cards-container">
-                <button class="seta-feedbacks" id="seta-esquerda"><img src="./img/Frame 9 (1).png" alt=""></button>
-                <div class="cards-feedbacks">
-                    <p class="texto-feedbacks">"Comecei no presencial, depois fui pro online, e em ambos tive acompanhamento de verdade. Cobrança de postura, suporte nas dúvidas e motivação real. Um profissional e amigo que levo pra vida!"</p>
-                    <div class="name-feedbacks">
-                        <img src="./img/uzy.png" alt="" class="iconeFoto">
-                        <h6><span class="ndo">Suzy</span>
+            <div class="cards-container swiper">
+                
+                <div class="swiper-wrapper">
+                    <div class="cards-feedbacks swiper-slide">
+                        <p class="texto-feedbacks">"Comecei no presencial, depois migrei para o online, e em ambos tive um acompanhamento de verdade. Teve cobrança de postura, suporte em todas as dúvidas e uma motivação real que fez a diferença. Um profissional incrível e também um amigo que levo pra vida inteira!"</p>
+                        <div class="name-feedbacks">
+                            <img src="./img/uzy.png" alt="" class="iconeFoto">
+                            <h6><span class="ndo">Suzy</span>
+                        </div>
+                    </div>
+                    <div class="cards-feedbacks swiper-slide" id="primeiro_card_feedback">
+                        <p class="texto-feedbacks">"Sempre fui resistente à musculação, mas tudo mudou com um acompanhamento de verdade. Tenho escoliose, e todos os treinos são adaptados com cuidado e atenção. Hoje me sinto mais forte, segura e confiante!"</p>
+                        <div class="name-feedbacks">
+                             <img src="./img/2-removebg-preview.png" alt="" class="iconeFoto">
+                            <h6><span class="ndo">Fer Rodrigues</span>
+                        </div>
+                    </div>
+                    <div class="cards-feedbacks swiper-slide">
+                        <p class="texto-feedbacks">"Desde dezembro já vejo diferença no meu corpo. Ainda tenho muito pra evoluir, mas o mais importante é que não estou mais estagnada. Coisas que antes não mudavam, agora estão evoluindo. Estou bem feliz com os resultados!"</p>
+                        <div class="name-feedbacks">
+                             <img src="./img/3-removebg-preview.png" alt="" class="iconeFoto">
+                            <h6><span class="ndo">Michelle Hipolito</span>
+                        </div>
+                    </div>
+                    <div class="cards-feedbacks swiper-slide">
+                        <p class="texto-feedbacks">"Caramba Danilo, que daora sem palavras que treinador foda, da pra ver a postura no esquema do treino, que diferença, ta bem mais encaixado e com uma postura mais ereta. Igual você falou que ia ficar, seguir suas palavras de quem já sabe, obrigado por tudo, você é foda!"</p>
+                        <div class="div-audio">
+                            <audio controls class="meu-player">
+                                <source src="/audio/testeAudio.opus" type="audio/ogg">
+                            </audio>
+                        </div>
                     </div>
                 </div>
-                <div class="cards-feedbacks" id="primeiro_card_feedback">
-                    <p class="texto-feedbacks">"Sempre fui resistente à musculação, mas tudo mudou com um acompanhamento de verdade. Tenho escoliose, e todos os treinos são adaptados com cuidado e atenção. Hoje me sinto mais forte, segura e confiante!"</p>
-                    <div class="name-feedbacks">
-                         <img src="./img/2-removebg-preview.png" alt="" class="iconeFoto">
-                        <h6><span class="ndo">Fer Rodrigues</span>
-                    </div>
-                </div>
-                <div class="cards-feedbacks">
-                    <p class="texto-feedbacks">"Desde dezembro já vejo diferença no meu corpo. Ainda tenho muito pra evoluir, mas o mais importante é que não estou mais estagnada. Coisas que antes não mudavam, agora estão evoluindo. Estou bem feliz com os resultados!"</p>
-                    <div class="name-feedbacks">
-                         <img src="./img/3-removebg-preview.png" alt="" class="iconeFoto">
-                        <h6><span class="ndo">Michelle Hipolito</span>
-                    </div>
-                </div>
-
-
-                <div class="cards-feedbacks2 invisivel">
-                    <p class="texto-feedbacks">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi delectus quam laboriosam recusandae, vel asperiores perspiciatis. Ipsa sint ipsam molestiae laudantium iste sapiente, dolor ut! Itaque amet quis nihil est!</p>
-                    <div class="name-feedbacks">
-                         <img src="./img/icone-removebg-preview.png" alt="" class="iconeFoto">
-                        <h6><span class="ndo">NDO Champ</span>
-                    </div>
-                </div>
-                <div class="cards-feedbacks2 invisivel">
-                    <p class="texto-feedbacks">Lorem, ipsum dolor sit amet consectetur adipisicing elit. At, sunt magnam earum neque aut, non, corporis eum accusantium ipsam qui deleniti? Adipisci dolorum doloribus rem reprehenderit modi suscipit autem magnam!</p>
-                    <div class="name-feedbacks">
-                         <img src="./img/icone-removebg-preview.png" alt="" class="iconeFoto">
-                        <h6><span class="ndo">NDO Champ</span>
-                    </div>
-                </div>
-                <div class="cards-feedbacks2 invisivel" id="ultimo_card_feedback">
-                    <p class="texto-feedbacks">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint saepe modi soluta recusandae magni quo, ullam quas quae nostrum alias ea ut odit voluptate. Qui amet ducimus adipisci ullam? Veritatis!</p>
-                    <div class="name-feedbacks">
-                         <img src="./img/icone-removebg-preview.png" alt="" class="iconeFoto">
-                        <h6><span class="ndo">NDO Champ</span>
-                    </div>
-                </div>
-                <button class="seta-feedbacks" id="seta-direita"><img src="./img/Frame 8 (1).png" alt=""></button>
+                <div class="swiper-button-prev"><img src="./img/Frame 9 (1).png" alt=""></div>
+                <div class="swiper-button-next"><img src="./img/Frame 8 (1).png" alt=""></div>
             </div>
+            
             <!-- TITULO EVOLUÇÂO -->
             <div class="tituloResultado"><img src="./img/Frame 10 (1).png" alt="resultados" class="resultados-titulo">]</div>
             <div class="resultados">
@@ -373,7 +364,22 @@
             </div>
         </footer>
     </main>
-    <script src="index.js"></script>
+    <script src="index.js">
+     
+        
+    </script>
+    <script>
+    const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        
+        navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+        },
+        });
+    </script>
     
 </body>
 
